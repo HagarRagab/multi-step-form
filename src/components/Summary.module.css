@@ -1,0 +1,69 @@
+.summary {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.summary .details {
+    background-color: var(--tertiary-bg-color);
+    padding: 1.5rem;
+    border-radius: var(--border-rounded-sm);
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 1.5rem;
+}
+
+.summary .details .planPrice {
+    color: var(--main-text-color);
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.summary .details h2 {
+    color: var(--main-text-color);
+    font-size: 1.1rem;
+    margin-bottom: 0.4rem;
+}
+
+.summary .details p {
+    grid-column: 1/2;
+}
+
+.summary .details span {
+    grid-column: 2/-1;
+    color: var(--main-text-color);
+}
+
+.summary .total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.summary .total span {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--secondary-text-color);
+}
+
+.summary p {
+    color: var(--dark-text-color);
+}
+
+.change {
+    background-color: transparent;
+    color: var(--dark-text-color);
+    text-decoration: underline;
+    font-size: 0.9rem;
+    border: none;
+    outline: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.change:hover,
+.change:focus {
+    color: var(--secondary-text-color);
+}

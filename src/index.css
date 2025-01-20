@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Satisfy&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+:root {
+    /* Background colors */
+    --main-bg-color: hsl(206, 94%, 87%);
+    --secondary-bg-color: hsl(0, 0%, 100%);
+    --tertiary-bg-color: hsl(217, 100%, 97%);
+
+    /* Button colors */
+    --main-btn-color: hsl(213, 96%, 18%);
+    --secondary-btn-color: hsl(243, 100%, 62%);
+
+    /* Text colors */
+    --main-text-color: hsl(213, 96%, 18%);
+    --secondary-text-color: hsl(243, 100%, 62%);
+    --light-text-color: hsl(217, 100%, 97%);
+    --medium-text-color: hsl(229, 24%, 87%);
+    --dark-text-color: hsl(231, 11%, 63%);
+
+    /* Msg color */
+    --warning-color: hsl(354, 84%, 57%);
+
+    /* focus color */
+    --focus-color: hsl(243, 100%, 62%);
+
+    /* Transition timing */
+    --transition: 0.3s;
+
+    /* border */
+    --border-size: 0.1rem;
+    --border-rounded-xs: 0.25rem;
+    --border-rounded-sm: 0.5rem;
+    --border-rounded-md: 1rem;
+    --border-rounded-lg: 1.5rem;
+}
+
+html {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 85%;
+    }
+}
+
+@media (max-height: 667px) {
+    html {
+        font-size: 80%;
+    }
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--main-bg-color);
+    font-weight: 500;
+    letter-spacing: 0.3px;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+#root {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.container {
+    width: 100%;
+    max-width: 940px;
+    height: 600px;
+    background-color: var(--secondary-bg-color);
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    border-radius: 0.8rem;
+    padding: 1rem;
+}
+
+@media (max-width: 768px) {
+    .container {
+        height: 100%;
+        padding: 0;
+        border-radius: 0;
+        grid-template-columns: 1fr;
+        background-color: var(--main-bg-color);
+    }
+}
+
+.mainContent {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-inline: auto;
+    background-color: var(--secondary-bg-color);
+    margin: 2rem 1rem 1rem;
+}
+
+@media (max-width: 768px) {
+    .mainContent {
+        width: 90%;
+        height: fit-content;
+        padding: 2rem;
+        border-radius: var(--border-rounded-md);
+        margin: 0 auto;
+        z-index: 1;
+    }
+}

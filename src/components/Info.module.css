@@ -1,0 +1,36 @@
+.infoForm label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--main-text-color);
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.infoForm label .warningMsg {
+    color: var(--warning-color);
+}
+
+.infoForm input {
+    width: 100%;
+    color: var(--main-text-color);
+    font-weight: 600;
+    font-size: 1rem;
+    border: var(--border-size) solid var(--medium-text-color);
+    border-radius: var(--border-rounded-sm);
+    padding: 0.8rem 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.infoForm input::placeholder {
+    color: var(--dark-text-color);
+    font-size: 0.8rem;
+}
+
+.infoForm input:focus {
+    outline: 2px solid var(--focus-color);
+}
+
+.infoForm input.wrong {
+    border: var(--border-size) solid var(--warning-color);
+}

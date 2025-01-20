@@ -1,0 +1,12 @@
+.planForm {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+@media (max-width: 768px) {
+    .planForm {
+        grid-template-columns: 1fr;
+    }
+}

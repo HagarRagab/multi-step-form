@@ -1,0 +1,22 @@
+.sidebar {
+    width: 100%;
+    background-image: url("../assets/images/bg-sidebar-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: var(--border-rounded-sm);
+    padding: 2rem;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        height: 12rem;
+        background-image: url("../assets/images/bg-sidebar-mobile.svg");
+        border-radius: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        padding-top: 2.5rem;
+        position: absolute;
+    }
+}

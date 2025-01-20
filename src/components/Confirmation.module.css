@@ -1,0 +1,29 @@
+.thankScreen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1.4rem;
+    flex: 1;
+}
+
+@media (max-width: 567px) {
+    .thankScreen {
+        padding-block: 6rem;
+    }
+}
+
+.icon {
+    width: 4rem;
+    height: 4rem;
+}
+
+.header {
+    color: var(--main-text-color);
+}
+
+.text {
+    max-width: 29rem;
+    color: var(--dark-text-color);
+    line-height: 1.4;
+}

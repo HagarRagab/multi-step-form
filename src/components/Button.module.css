@@ -1,0 +1,41 @@
+.btn {
+    display: block;
+    width: fit-content;
+    color: var(--light-text-color);
+    text-transform: capitalize;
+    font-size: 1rem;
+    border-radius: var(--border-rounded-sm);
+    padding: 0.9rem 1.3rem;
+    border: none;
+    outline: none;
+    align-self: flex-end;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn:focus-within {
+    outline: 2px solid var(--secondary-btn-color);
+}
+
+.primary {
+    background-color: var(--main-btn-color);
+    margin-left: auto;
+}
+
+.confirm {
+    background-color: var(--secondary-btn-color);
+}
+
+.primary:hover,
+.confirm:hover {
+    opacity: 0.9;
+}
+
+.back {
+    background-color: transparent;
+    color: var(--dark-text-color);
+}
+
+.back:hover {
+    color: var(--main-text-color);
+}
