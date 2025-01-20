@@ -8,7 +8,7 @@
 -   [Conclusion](#conclusion)
 -   [Technologies Used](#technologies-used)
 
-**Live demo** [click here](https://multi-step-form.netlify.app)
+**Live demo** [click here](https://multiple-step-form-app.netlify.app)
 
 ![alt text](src/assets/images/overview.jpg)
 
