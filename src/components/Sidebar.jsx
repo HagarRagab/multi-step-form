@@ -1,4 +1,4 @@
-import styles from "./sidebar.module.css";
+import styles from "./Sidebar.module.css";
 import Step from "./Step";
 
 function Sidebar({ steps }) {
