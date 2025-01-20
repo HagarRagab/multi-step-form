@@ -1,7 +1,7 @@
 import { useForm } from "react-hook-form";
 import { useInfo } from "../contexts/InfoContext";
 import { features } from "../purchaseData";
-import AddFeature from "./addFeature";
+import AddFeature from "./AddFeature";
 import ContentHeader from "./ContentHeader";
 import Form from "./Form";
 
